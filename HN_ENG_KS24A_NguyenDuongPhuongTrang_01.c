@@ -80,19 +80,17 @@ int main(){
 	    		if(check==0){
 	    			printf("Ban chua nhap cac phan tu.Vui long chon 1 \n");
 	    		}else{
-	                printf("Moi ban nhap vi tri muon chen:");
-	                scanf("%d",&index);
-	                
-	                for(int i=n; i>index; i--){
-		                arr[i]=arr[i-1];
-		            }
-	                int a;
-	                printf("Nhap so muon them:");
-	                scanf("%d",&a);
-	                arr[index]=a;
-	                for(int i=0;i<n+1;i++){
-		                printf("%d\n",arr[i]);
-		            }
+				
+	                        for(int i=n; i<n-1; i--){
+		                    arr[i]=arr[i-1];
+		                }
+	                        int a;
+	                        printf("Nhap so muon them:");
+	                        scanf("%d",&a);
+	                        arr[n]=a;
+	                        for(int i=0;i<n+1;i++){
+		                     printf("%d\n",arr[i]);
+		                }
 		        }
 	    		break;
 	    	case 6:
